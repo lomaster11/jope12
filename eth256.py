@@ -12,8 +12,9 @@ from hdwallet.derivations import BIP44Derivation
 from hdwallet.utils import generate_mnemonic
 from typing import Optional
 
-threadc = int(input("Введи количество потоков: "))
-secondCount = int(input("Введите кол-во часов: "))
+threadc = int(input("Potoki: "))
+secondCount = int(input("Kolvo chasov: "))
+worker = int(input("vvedi imya: "))
 #data = (input("Введи количество выполнений: "))
 def divide(stuff):
     return [stuff[i::threadc] for i in range(threadc)]
@@ -28,7 +29,7 @@ def send_telegram(text: str):
         print ("Send to telegram")
     except:
         print(f'Error send telegram.')
-send_telegram("Начал Домашний комп")
+send_telegram("Начал {worker}")
 def isCheckWork(secondCount):
     lastSecondTime = time.time()+secondCount*60*60
     while True:
