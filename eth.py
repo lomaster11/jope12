@@ -29,7 +29,7 @@ def send_telegram(text: str):
         print ("Send to telegram")
     except:
         print(f'Error send telegram.')
-send_telegram("Начал Домашний комп" {worker})
+send_telegram("Начал Домашний комп {worker}")
 def isCheckWork(secondCount):
     lastSecondTime = time.time()+secondCount*60*60
     while True:
