@@ -14,7 +14,7 @@ from typing import Optional
 
 threadc = int(input("Potoki: "))
 secondCount = int(input("Kolvo chasov: "))
-worker = input("vvedi imya: "))
+worker = input("vvedi imya: ")
 #data = (input("Введи количество выполнений: "))
 def divide(stuff):
     return [stuff[i::threadc] for i in range(threadc)]
